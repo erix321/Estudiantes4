@@ -9,15 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import Clases.*;
@@ -30,41 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         datos=new ArrayList<String>();
         setContentView(R.layout.activity_main);
-
-
-        //ArrayList<String> datos=new ArrayList<String>();
-
-/*
-        File archivo=null;
-        archivo=new File("estudiantes.txt");
-
-            try {
-                if(!archivo.exists()) {
-                    archivo.createNewFile();
-                }
-            } catch (IOException e) {
-                Log.d("CREATION",e.getMessage());
-                e.printStackTrace();
-            }
-        FileReader fr=null;
-        BufferedReader br=null;
-        try{
-            fr=new FileReader(archivo);
-            br=new BufferedReader(fr);
-            String linea;
-            while ((linea=br.readLine())!=null){
-                datos.add(linea);
-            }
-        }catch (Exception e){}
-        finally {
-            try {
-                if(null!=fr){
-                    fr.close();
-                }
-            }catch (Exception e2){}
-        }
-        */
-
     }
 
     @Override
